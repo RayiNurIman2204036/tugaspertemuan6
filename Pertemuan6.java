@@ -4,6 +4,8 @@
  */
 package pertemuan6;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Rayin
@@ -46,9 +48,19 @@ public class Pertemuan6 {
         // TODO code application logic here
         PersegiPanjang persegiPanjang1 = new PersegiPanjang();
         System.out.println("Luas persegi panjang dengan panjang "+persegiPanjang1.panjang +" dan lebar " + persegiPanjang1.lebar + " adalah "+ persegiPanjang1.getLuas()+" dan kelilingnya " + persegiPanjang1.getKeliling());
-        PersegiPanjang persegiPanjang2 = new PersegiPanjang(30 , 40);
+        System.out.printf("Masukan panjang: ");
+        Scanner bilangan = new Scanner(System.in);
+        int panjang = bilangan.nextInt();
+        System.out.printf("Masukan lebar: ");
+        int lebar = bilangan.nextInt();
+        PersegiPanjang persegiPanjang2 = new PersegiPanjang(panjang , lebar);
         System.out.println("Luas persegi panjang dengan panjang "+persegiPanjang2.panjang +" dan lebar " + persegiPanjang2.lebar + " adalah "+ persegiPanjang2.getLuas()+" dan kelilingnya " + persegiPanjang2.getKeliling());
-        PersegiPanjang persegiPanjang3 = new PersegiPanjang(25 , 35);
+        bilangan = new Scanner(System.in);
+        System.out.printf("Masukan panjang: ");
+        panjang = bilangan.nextInt();
+        System.out.printf("Masukan lebar: ");
+        lebar = bilangan.nextInt();
+        PersegiPanjang persegiPanjang3 = new PersegiPanjang(panjang , lebar);
         System.out.println("Luas persegi panjang dengan panjang "+persegiPanjang3.panjang +" dan lebar " + persegiPanjang3.lebar + " adalah "+ persegiPanjang3.getLuas()+" dan kelilingnya " + persegiPanjang3.getKeliling());
     }
 }
